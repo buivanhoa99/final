@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Trang tìm kiếm</p>
+    <form action="/Home/Search" method="POST">
+
+        <div class="form-group">
+            <label for="Name">Sách</label>
+            <input class="form-control" id="Name" name="Name" placeholder="Nhập tên sách">
+        </div>
+        <div class="form-group">
+            <label for="Age">Đơn hàng</label>
+            <input class="form-control" id="Age" name="Age" placeholder="Nhập đơn hàng">
+        </div>
+
+
+
+        <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    </form>
+</div>
