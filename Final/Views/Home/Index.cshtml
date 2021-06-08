@@ -1,10 +1,26 @@
-﻿@{
+﻿@using Final.Data;
+@model List<Sach>
+
+@{
     ViewData["Title"] = "Home Page";
-    Layout = "~View/Home/Layout.cshtml";
+    List<Sach> sachs = Model;
 
 }
+<div class="container">
+    <div class="row">
+        @foreach (var item in sachs)
+                {
+            <div class="card col-sm table-hover" style="width: 28rem;">
+                <img class="card-img-top" src="@item.Hinh" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.TenSach</h5>
+                    <p class="card-text">@item.Mota</p>
+                    <div class="d-flex"><a href="/Home/books/@item.MaSach" class="btn btn-primary">Chi tiết</a></div>
+                </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+            </div>
+        }
+
+    </div>
 </div>
+}

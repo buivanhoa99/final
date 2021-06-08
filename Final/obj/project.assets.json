@@ -5797,19 +5797,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vanhoa\\.nuget\\packages\\": {}
+    "C:\\Users\\VanHoaBui\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vanhoa\\source\\repos\\Final\\Final\\Final.csproj",
+      "projectUniqueName": "D:\\final\\final\\Final\\Final.csproj",
       "projectName": "Final",
-      "projectPath": "C:\\Users\\vanhoa\\source\\repos\\Final\\Final\\Final.csproj",
-      "packagesPath": "C:\\Users\\vanhoa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vanhoa\\source\\repos\\Final\\Final\\obj\\",
+      "projectPath": "D:\\final\\final\\Final\\Final.csproj",
+      "packagesPath": "C:\\Users\\VanHoaBui\\.nuget\\packages\\",
+      "outputPath": "D:\\final\\final\\Final\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\vanhoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\VanHoaBui\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5868,7 +5868,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

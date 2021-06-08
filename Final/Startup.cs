@@ -1,4 +1,5 @@
 using Final.Data;
+using Final.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,7 +29,8 @@ namespace Final
             services.AddControllersWithViews();
             services.AddDbContext<MyDBContext>(
                     options =>options.UseSqlServer(Configuration.GetConnectionString("mycnn"))
-                ); 
+                );
+            services.AddTransient<ISachService, SachService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

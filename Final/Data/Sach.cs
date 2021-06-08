@@ -8,6 +8,10 @@ namespace Final.Data
 {
     public class Sach
     {
+        public Sach()
+        {
+        }
+
         public Sach(int maSach, string tenSach, string hinh, int donGia, string mota, int maLoai)
         {
             MaSach = maSach;

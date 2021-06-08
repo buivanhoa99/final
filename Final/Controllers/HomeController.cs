@@ -1,4 +1,5 @@
 ﻿using Final.Models;
+using Final.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -12,19 +13,24 @@ namespace Final.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ISachService _ISachService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,ISachService service)
         {
             _logger = logger;
+            _ISachService = service;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var sachs = _ISachService.GetAllBooks();
+            Console.WriteLine(sachs.Count);
+            return View(sachs);
         }
 
         public IActionResult Privacy()
         {
+
             return View();
         }
         [HttpGet]
@@ -54,7 +60,7 @@ namespace Final.Controllers
         }
         public IActionResult HomePage()
         {
-            return View("index");
+            return View("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
@@ -62,5 +68,6 @@ namespace Final.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
     }
 }
